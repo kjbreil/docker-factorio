@@ -5,7 +5,7 @@ PORTS = -p 27015:27015/tcp -p 34197:34197/udp
 
 .PHONY: 
 
-default: build
+default: build push
 
 build:
 	docker build -t $(NS)/$(REPO) .
